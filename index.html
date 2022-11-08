@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgba(19, 81, 152, 0.998);
+        }
+
+        ul {
+            padding: 15px;
+        }
+
+        li {
+            display: inline;
+            margin: 15px;
+            font-size: 22px;
+        }
+
+        nav {
+            background-color: white;
+        }
+
+        main {
+            min-height: calc(100vh - 56.4px - 50.4px);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 1em 2em 1em 2em;
+        }
+
+        .p1 {
+            text-align: left;
+            font-size: 8em;
+        }
+
+        .container {
+            display: flex;
+
+        }
+
+        footer {
+            background-color: white;
+        }
+
+        footer div p {
+            text-align: center;
+            padding: 1em;
+        }
+
+        .img {
+            border: 2px solid black;
+            border-radius: 200px;
+            width: 20em;
+        }
+
+        .box2 {
+            color: white;
+        }
+
+        .box3 {
+            font-family: 'Lobster', cursive;
+        }
+
+        .box4 {
+            font-family: 'PT Mono', monospace;
+            font-size: 30px;
+        }
+
+        .button {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2em;
+        }
+
+        .button p {
+            background-color: white;
+            color: black;
+            padding: 0.8em;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: transform .2s;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        @media screen and (max-width:62em) {
+            .img {
+                width: 15em;
+            }
+
+            .p1 {
+                font-size: 6em;
+            }
+
+            .box3 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }@media screen and (max-width:360px) {
+            .box1{
+                padding: 1em;
+            }
+            .img {
+                width: 10em;  
+            }
+            .p1 {
+                font-size: 5em;
+            }
+            .box3 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .box4{
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="box1">
+            <div class="container">
+                <img class="img" src="Logo-ProFile/proFile.jpg" alt="Profile Picture">
+            </div>
+        </div>
+        <div class="box2">
+            <div class="box3">
+                <p class="p1">Hello!...</p>
+            </div>
+            <div class="box4">
+                My Name Is <b>Kunal Kawate</b><br>
+                <b>&</b> I Am A <b>Computer Engineer</b> Student.
+            </div>
+            <div class="button">
+                <p> <a href="#">About</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <p>Kunal Kawate | Copyrights© 2022 all rights reserved. </p>
+        </div>
+    </footer>
+</body>
+
+</html>
